@@ -23,8 +23,6 @@ namespace DotNetCoreMultipleFileUploadWithApi.Controllers
         public async Task<IActionResult> UploadFiles(List<IFormFile> files)
         {
             long size = files.Sum(f => f.Length);
-
-            // full path to file in temp location
             var filePath = Path.GetTempFileName();
 
             foreach (var formFile in files)
@@ -37,20 +35,12 @@ namespace DotNetCoreMultipleFileUploadWithApi.Controllers
                     }
                 }
             }
-
-            // process uploaded files
-            // Don't rely on or trust the FileName property without validation.
-
             return Ok(new { count = files.Count, size, filePath });
         }
         [HttpPost("UploadModelFiles")]
         public async Task<IActionResult> UploadModelFiles([FromForm]TestDocumentModel formFiles)
         {
-            //var uploads = Path.Combine(_environment.WebRootPath, "uploads");
-         
-
             var filePath = Path.Combine(@"C:\\Users\\Rezaul Khan\\Desktop\\New folder");
-
             if (formFiles.formFiles != null)
             {
                 long sizeOfFile = formFiles.formFiles.Length;
