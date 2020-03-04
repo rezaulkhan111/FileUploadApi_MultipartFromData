@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29311.281
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreMultipleFileUploadWithApi", "DotNetCoreMultipleFileUploadWithApi\DotNetCoreMultipleFileUploadWithApi.csproj", "{EA2A2C06-520E-4DC1-8B92-80E95B995F75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA2A2C06-520E-4DC1-8B92-80E95B995F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA2A2C06-520E-4DC1-8B92-80E95B995F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA2A2C06-520E-4DC1-8B92-80E95B995F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA2A2C06-520E-4DC1-8B92-80E95B995F75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7D2FDA8-B679-4D3D-A8B0-94AF2EF0D831}
+	EndGlobalSection
+EndGlobal
